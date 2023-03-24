@@ -2,7 +2,7 @@ import json
 import requests
 import streamlit as st
 
-
+st.image("https://res.heraldm.com/content/image/2017/12/17/20171217000143_0.jpg")
 st.title("Seoul Bike Prediction App!")
 
 col1, col2 = st.columns(2)
