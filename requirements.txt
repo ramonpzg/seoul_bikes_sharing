@@ -1,9 +1,9 @@
 # local package
--e .
+# -e .
 
 # external requirements
-pandas
-numpy
-scikit-learn
-pyarrow
+# pandas
+# numpy
+# scikit-learn
+# pyarrow
 streamlit
