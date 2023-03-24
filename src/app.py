@@ -147,7 +147,7 @@ if data["seasons"] == "Yes":
 else:
     data["functioning_day_yes"] = 0
 
-prompt = f"Find out how many bikes 🚲 are needed on {data['day']}-{data['month']}-{'year'} to service the city of Seoul 🇰🇷"
+prompt = f"Find out how many bikes 🚲 are needed on {data['day']}-{data['month']}-{data['year']} to service the city of Seoul 🇰🇷"
 if st.button(prompt):
     data_json = json.dumps(data)
     r = requests.post(
@@ -156,4 +156,4 @@ if st.button(prompt):
         data=data_json
     ).text
     response = int(float(r.split("[")[-1].split("]")[0]))
-    st.write(f"{response} is the amount of 🚲🚲 needed on {data['day']}-{data['month']}-{'year'}! ᕙ(  •̀ ᗜ •́  )ᕗ")
+    st.write(f"{response} is the amount of 🚲🚲 needed on {data['day']}-{data['month']}-{data['year']}! ᕙ(  •̀ ᗜ •́  )ᕗ")
